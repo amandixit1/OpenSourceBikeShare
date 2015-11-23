@@ -11,8 +11,8 @@ function response($message,$error=0,$log=1)
          $userid=$_COOKIE["loguserid"];
          }
       else $userid=0;
+	  $somevar=0;
       $number=getphonenumber($userid);
-      logresult($number,$message);
       }
    R::commit();
    echo '<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>',$systemname,'</title>';
